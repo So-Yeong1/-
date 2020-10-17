@@ -18,17 +18,18 @@ app.get('/user', (req, res)=>{
     res.sendFile(__dirname + '/user.html');
 })
 
-app.get('/user/:id', (req, res)=>{
+app.get('/user/:id/:pwd', (req, res)=>{
     console.log(req.params);
     res.send('user : ' + req.params.id);
 })
 
 app.get('/post', (req, res)=>{
+    console.log(req.query.id + ',' + req.query.passward);
     res.sendFile(__dirname + '/post.html');
 })
 
-app.post('post', (req,res)=>{
-    res.send('This is post page for post methos');
+app.post('/post', (req,res)=>{
+    res.send('This is post page');
 })
 
 app.listen(app.get('port'), ()=>{
