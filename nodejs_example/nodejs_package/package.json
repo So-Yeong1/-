@@ -1,0 +1,20 @@
+{
+  "name": "sample_package",
+  "version": "1.0.0",
+  "description": "package sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "this is test"
+  },
+  "keywords": [
+    "sample"
+  ],
+  "author": "avd",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
